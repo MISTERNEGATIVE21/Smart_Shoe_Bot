@@ -51,13 +51,6 @@
             text-align: center;
         }
 
-        .flash-section {
-            background-color: #2ecc71;
-            color: #fff;
-            padding: 2rem;
-            text-align: center;
-        }
-
         footer {
             background-color: #333;
             color: #fff;
@@ -88,6 +81,25 @@
         .flash-button:hover {
             background-color: #219653;
         }
+
+        .launchpad-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 1.5rem 3rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .launchpad-button:hover {
+            background-color: #2980b9;
+        }
     </style>
 </head>
 
@@ -116,16 +128,12 @@
         </ul>
     </section>
 
-    <section class="github-section">
-        <h2>GitHub Code</h2>
-        <p>Explore and contribute to our open-source project on GitHub:</p>
-        <a href="https://github.com/MISTERNEGATIVE21/Smart_Shoe_Bot" target="_blank">GitHub Repository</a>
-    </section>
-
-    <section class="flash-section">
-        <h2>Flash Firmware with ESP Launchpad</h2>
-        <p>Click the button below to initiate the flashing process:</p>
-        <button class="flash-button" onclick="flashFirmware()">Flash Firmware</button>
+    <section class="launchpad-section">
+        <h2>Try it with ESP Launchpad</h2>
+        <p>Explore ESP Launchpad to flash firmware for your Smart Shoe Tracker:</p>
+        <a href="https://misternegative21.github.io/esp-launchpad/">
+            <img alt="Try it with ESP Launchpad" src="https://espressif.github.io/esp-launchpad/assets/try_with_launchpad.png" width="250" height="70">
+        </a>
     </section>
 
     <section id="contact">
@@ -134,31 +142,16 @@
         <p>Contact us on Telegram: <a href="https://t.me/misternegative2" target="_blank">@misternegative2</a></p>
     </section>
 
+    <section class="github-section">
+        <h2>GitHub Code</h2>
+        <p>Explore and contribute to our open-source project on GitHub:</p>
+        <a href="https://github.com/MISTERNEGATIVE21/Smart_Shoe_Bot" target="_blank">GitHub Repository</a>
+    </section>
+
     <footer>
         <p>&copy; 2024 Smart Shoe Tracker. All rights reserved.</p>
     </footer>
 
-    <script src="https://unpkg.com/esptool-js/bundle.js"></script>
-    <script>
-        function flashFirmware() {
-            // Assuming esptool is globally available after including the bundle.js
-            const binPath = '../assets/firmware/SoS_Consentium.ino.bootloader.bin'; // Adjust the path accordingly
-
-            // Add any additional parameters needed for flashing
-            const flashOptions = {
-                // Add flash options here if required
-            };
-
-            esptool.writeFlash(0, binPath, flashOptions)
-                .then(() => {
-                    alert('Firmware flashed successfully!');
-                })
-                .catch((error) => {
-                    console.error('Error flashing firmware:', error);
-                    alert('Error flashing firmware. Check the console for details.');
-                });
-        }
-    </script>
 </body>
 
 </html>
