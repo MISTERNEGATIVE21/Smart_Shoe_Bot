@@ -13,8 +13,8 @@ const int lPin = 26;
 const int knockSensor = 34;
 const int threshold = 100;
 
-#define BOT_TOKEN "7193740027:AAFZKxbM1npsSJGKRHpc6cPIAZYZxuJng8U"
-#define CHAT_ID 1378489760  // Change CHAT_ID to the actual chat ID as an integer
+#define BOT_TOKEN "xxx"
+#define CHAT_ID xxx  // Change CHAT_ID to the actual chat ID as an integer
 
 WiFiClientSecure secured_client;
 UniversalTelegramBot bot(BOT_TOKEN, secured_client);
