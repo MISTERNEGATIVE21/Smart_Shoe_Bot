@@ -18,7 +18,7 @@ Enhance your safety with the Smart Shoe Tracker, a project designed to prevent i
 
 ## Introduction
 
-The Smart Shoe Tracker is a system that utilizes Arduino and various sensors to enhance user safety. It integrates with the Telegram messaging platform for real-time alerts and notifications.
+The Smart Shoe Tracker is a system that utilizes Arduino and various sensors to enhance user safety. It integrates with the Telegram messaging platform for real-time alerts and notifications. The mobile app is built with Expo, providing a seamless experience for users.
 
 ## Features
 
@@ -35,6 +35,7 @@ The Smart Shoe Tracker is a system that utilizes Arduino and various sensors to 
 - Telegram account and BOT_TOKEN
 - ESP32 or compatible Arduino board
 - Necessary sensors (e.g., knock sensor)
+- Expo CLI installed for mobile app development
 
 ### Installation
 
@@ -42,6 +43,8 @@ The Smart Shoe Tracker is a system that utilizes Arduino and various sensors to 
 2. Configure your Wi-Fi credentials and Telegram BOT_TOKEN in the Arduino sketch.
 3. Connect the necessary sensors to your Arduino board.
 4. Upload the sketch to your ESP32 board.
+5. Install Expo CLI globally using `npm install -g expo-cli`.
+6. Navigate to the mobile app directory and run `npm install` to install dependencies.
 
 ## Usage
 
@@ -53,6 +56,7 @@ The Smart Shoe Tracker is a system that utilizes Arduino and various sensors to 
 - **Arduino:** Open-source electronics platform for prototyping.
 - **Universal Telegram Bot:** Library for integrating Telegram Bots with Arduino.
 - **ESP32:** Powerful microcontroller with built-in Wi-Fi and Bluetooth capabilities.
+- **Expo:** Framework for building cross-platform mobile apps with React Native.
 - **Various Sensors:** Utilized for detecting knocks, movements, etc.
 
 ## Contributing
