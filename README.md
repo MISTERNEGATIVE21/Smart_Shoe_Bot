@@ -1,6 +1,7 @@
 # Smart Shoe Beacon using Consentium Cloud as Backend
 
-![craiyon_204326_Shoes_with_drawing_theme](https://github.com/MISTERNEGATIVE21/Smart_Shoe_Bot/assets/51168229/4fcc0323-29d6-4b0b-bab8-1768ed13d423)
+![Uploading craiyon_204905_The_shape_of_these_sneakers_is_likely_to_be_a_harmonious_fusion_of_urban_style_and_ru.png…]()
+
 
 Enhance your safety with the Smart Shoe Tracker, a project designed to prevent injuries, provide location tracking through smart beacons, prevent harassment, and offer quick support calls.
 
